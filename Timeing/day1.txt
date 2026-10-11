@@ -1,0 +1,3 @@
+i have done linux installastion on AWS cloud . 
+Then connect to putty via ppk key.
+Then i check ls , whoami, df -h, mkdir , vim command.
