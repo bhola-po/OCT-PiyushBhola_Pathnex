@@ -1,6 +1,6 @@
 Day 02 — Services & Tags
 
-🔹 Ansible — Install & Enable Nginx
+Ansible — Install & Enable Nginx
 - name: Install and start Nginx on Pathnex
   hosts: all
   become: yes
@@ -18,7 +18,7 @@ Day 02 — Services & Tags
         enabled: yes
 
 
-🔹 Terraform — EC2 with Tags (r5.2xlarge)
+Terraform — EC2 with Tags (r5.2xlarge)
 provider "aws" {
   region = "us-east-1"
 }
@@ -57,11 +57,11 @@ spec:
             - containerPort: 80
 
 
-🔹 Shell Script — Disk Usage
+Shell Script — Disk Usage
 #!/bin/bash
 df -h
 
-🔹 Docker
+Docker
 # Docker Images & Containers
 docker pull ubuntu
 docker images
