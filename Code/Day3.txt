@@ -1,5 +1,5 @@
 Day 03 — Ansible, Terraform & Kubernetes Basics
-🔹 Ansible — Install Apache and Start Service
+Ansible — Install Apache and Start Service
 - name: Install and Start Apache
   hosts: all
   become: yes
@@ -16,7 +16,7 @@ Day 03 — Ansible, Terraform & Kubernetes Basics
         enabled: yes
 
 
-🔹 Terraform — EC2 Instance (t3.medium)
+Terraform — EC2 Instance (t3.medium)
 provider "aws" {
   region = "us-east-1"
 }
@@ -28,7 +28,7 @@ resource "aws_instance" "PathnexEC2" {
     Name = "Pathnex-T3"
   }
 }
-🔹 Kubernetes — Create a ReplicaSet with 3 Replicas
+Kubernetes — Create a ReplicaSet with 3 Replicas
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
@@ -48,13 +48,13 @@ spec:
           image: nginx
           ports:
             - containerPort: 80
-🔹 Shell Script — User Info
+Shell Script — User Info
 #!/bin/bash
 echo "Current user: $(whoami)"
 echo "Current user groups: $(groups)"
 
 
-🔹 Docker
+Docker
 # Docker File for Nginx Web Server
 FROM nginx:latest
 COPY index.html /usr/share/nginx/html/index.html
